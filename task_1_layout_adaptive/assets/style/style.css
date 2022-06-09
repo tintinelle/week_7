@@ -56,3 +56,30 @@
     margin: 0.5%;
     margin-bottom: 2%;
 }
+
+@media screen and (max-width: 767px) {
+    .footer {
+        display: none;
+    }
+
+    .main {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .main__content,
+    .aside {
+        width: 100%;
+    }
+
+    .main__content {
+        margin-bottom: 2%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .footer {
+        display: none;
+    }
+}
+
