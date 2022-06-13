@@ -5,57 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VoltStream</title>
-    <style>
-        * {
-            border: 1px solid black;
-        }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Questrial&family=Raleway:wght@100;400;600&family=Roboto:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
 
-        /* .grid-container {
-            display: grid;
-            grid-template-columns: ;
-        } */
+    
+    <link rel="stylesheet" href="assets/style/normalize.css">
+    <link rel="stylesheet" href="assets/style/style.css">
 
-        .header {
-            display: flex;
-            justify-content: space-around;
-        }
 
-        .main {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: 2fr 1fr 2fr 1fr;
-            min-height: 80vh;
-        }
-/* 
-        .main__h1 {
-            grid-area: 1/1/2/2;
-        }
-
-        .main__text {
-            grid-area: 2/1/3/2;
-        }
-
-        .main__button {
-            grid-area: 3/1/4/2;
-        }
-
-        .main__section {
-            grid-area: 4/1/5/2;
-        } */
-
-        .main__image {
-            grid-area: 1/2/5/3;
-        }
-
-        .header,
-        .main {
-        background: linear-gradient(80.5deg, #83A4BD 11.55%, #A5A2B3 24.51%, #BA929B 33.33%, #BD8689 39.89%, #C46F6A 47.85%, #C65857 55.62%, #BF4145 65.14%, #9C2E37 75.49%, #7A262E 84.66%, #5B1E23 95.55%, #421F23 103.99%, #2D1C22 111.11%);
-        }
-
-        .footer {
-            background-image: url(assets/img/map.svg);
-        }
-    </style>
 </head>
 
 <body>
@@ -63,7 +21,7 @@
     <header class="header">
         <img src="assets/img/logo.svg" alt="Логотип VoltStream">
 
-        <nav>
+        <nav class="header__navigation">
             <a href="#about">О нас</a>
             <a href="#stages">Этапы</a>
             <a href="#reviews">Отзывы</a>
@@ -79,25 +37,28 @@
     </header>
 
     <main class="main">
-        <h1 class="main__h1">Рассчитаем стоимость комплектующих и установки системы заземления за 1 день</h1>
+        <h1 class="main__h1"> <span class="bold">Рассчитаем стоимость</span>  комплектующих и установки <span class="bold">системы заземления</span>  за 1 день</h1>
+
+        <img class="main__image" src="assets/img/picture.svg" alt="Склад и коробки">
+
         <p class="main__text">Получите подробную смету ответив всего на 5 простых вопросов</p>
+
         <div class="main__button">
             <button>Получить расчет</button>
         </div>
-        <img class="main__image" src="assets/img/picture.svg" alt="Склад и коробки">
 
         <section class="main__section">
-            <div>
+            <div class="main-section__item">
                 <img src="assets/img/star.svg" alt="Иконка звездочка">
                 <p>Собственное производство</p>
             </div>
 
-            <div>
+            <div class="main-section__item">
                 <img src="assets/img/cart.svg" alt="Иконка корзины для покупок">
                 <p>Наличие товара на складе</p>
             </div>
 
-            <div>
+            <div class="main-section__item">
                 <img src="assets/img/page.svg" alt="Иконка лист бумаги">
                 <p>Выдаем всю документацию</p>
             </div>
@@ -105,17 +66,20 @@
     </main>
 
     <footer class="footer">
-        <section>
+        <section class="footer__section">
             <h2>Свяжитесь с нами или приезжайте в гости на чашечку кофе!</h2>
             <a href="tel:+78005554480">+7 800 555 44 80</a>
             <a href="mailto:info@voltstream.ru">info@voltstream.ru</a>
             <a href="https://2gis.ru/moscow/geo/4504235282566255">Россия, Москва, Ул. Газгольдерная 12 стр. 5</a>
-            <a href="https://www.instagram.com">
+            
+            <div> 
+                <a href="https://www.instagram.com">
                 <img src="assets/img/instagram.svg" alt="Иконка инстаграм">
             </a>
             <a href="https://www.twitter.com">
                 <img src="assets/img/twitter.svg" alt="Иконка твиттер">
             </a>
+            </div>
         </section>
     </footer>
     
