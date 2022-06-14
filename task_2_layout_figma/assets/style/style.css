@@ -92,7 +92,7 @@ font-weight: 900;
 
 .main {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1.5fr;
     /* grid-template-rows: 2fr 1,5fr 1,5fr 1fr; */
     min-height: 85vh;
     padding-left: 5%;
@@ -138,7 +138,7 @@ font-weight: 900;
     grid-area: 4/1/5/2;
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 85%;
 } 
 
 .main-section__item {
@@ -153,7 +153,7 @@ font-weight: 900;
 .main__image {
     grid-area: 1/2/5/3;
     align-self: center;
-    
+    width: 97%;
 }
 
 /* .main {
@@ -178,18 +178,21 @@ font-weight: 900;
     background-size: 100%;
     background-position-y: center ;
     min-height: 50vh;
-
-    font-family: 'Gilroy', Times, sans-serif;
-    font-weight: 400;
+    padding: 5%;
 }
 
 .footer__section {
     background-color: #FFFFFF;
-    width: 25%;
+    width: 23%;
     display: flex;
     flex-flow: column wrap;
+    width: 22%;
     padding: 2%;
-    margin: 5%;
+
+    font-family: 'Gilroy', Times, sans-serif;
+    font-weight: 300;
+    line-height: 200%;
+
     color: #333333;
 }
 
@@ -199,5 +202,67 @@ font-weight: 900;
 }
 
 .footer__section:last-child a {
-    margin-right: 6%;
+    margin-right: 5%;
 }
+
+
+@media screen and (max-width:767px) {
+    * {
+        border: 1px solid black;
+    }
+
+    .header__navigation,
+    .header__call {
+        display: none;
+    }
+
+    .main {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        
+    }
+
+    .main__h1 {
+        font-size: 1.8em;
+        font-weight: 200;
+    }
+
+    .main__section {
+        order: 2;
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+
+        width: 60%;
+        border-radius: 7%;
+
+        background-color: rgba(255,255,255,0.1);
+    }
+
+    .main__image {
+        order: 1;
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    
+    body {
+        background-attachment:  fixed; 
+    }
+    
+    .footer {
+        display: flex;
+        align-items: flex-end;
+        padding: 15% 0 0 0;
+    }
+
+    .footer__section {
+        width: 100%;
+        margin: 0;
+        align-items: center;
+    }
+
+    }

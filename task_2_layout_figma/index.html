@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1.0">
     <title>VoltStream</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,7 +39,12 @@
     <main class="main">
         <h1 class="main__h1"> <span class="bold">Рассчитаем стоимость</span>  комплектующих и установки <span class="bold">системы заземления</span>  за 1 день</h1>
 
-        <img class="main__image" src="assets/img/picture.svg" alt="Склад и коробки">
+        <!-- <img class="main__image" src="assets/img/picture.svg" alt="Склад и коробки"> -->
+
+        <picture class="main__image">
+            <source srcset="assets/img/image_mob_tablet.svg" media="(max-width: 1023px)">
+            <source srcset="assets/img/picture.svg"> <img src="assets/img/picture.svg" alt="Склад и коробки">
+        </picture>
 
         <p class="main__text">Получите подробную смету ответив всего на 5 простых вопросов</p>
 
